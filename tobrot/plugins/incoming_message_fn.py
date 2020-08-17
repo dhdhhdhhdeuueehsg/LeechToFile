@@ -111,7 +111,7 @@ async def incoming_youtube_dl_f(client, message):
     )
     LOGGER.info(dl_url)
     if len(message.command) > 1:
-        if message.command[1] == "gdrive":
+        #if message.command[1] == "gdrive":
             with open('blame_my_knowledge.txt', 'w+') as gg:
                 gg.write("I am noob and don't know what to do that's why I have did this")
     LOGGER.info(cf_name)
