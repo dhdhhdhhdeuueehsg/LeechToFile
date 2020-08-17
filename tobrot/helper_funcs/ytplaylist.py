@@ -21,7 +21,7 @@ from tobrot import (
 )
 
 
-async def yt_playlist_downg(message, i_m_sefg, G_DRIVE):
+async def yt_playlist_downg(message, i_m_sefg):
     url = message.text
     usr = message.from_user.id
     messa_ge = i_m_sefg.reply_to_message
