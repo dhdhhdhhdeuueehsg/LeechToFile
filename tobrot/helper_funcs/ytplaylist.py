@@ -47,19 +47,4 @@ async def yt_playlist_downg(message, i_m_sefg):
             error_message
         )
         return False, None
-    if G_DRIVE:
-        get_g = os.listdir(fol_der)
-        print(get_g)
-        for ga_u in get_g:
-            print(ga_u)
-            ta_m = os.path.join(fol_der, ga_u)
-            print(ta_m)
-            shutil.move(ta_m, './')
-            await upload_to_gdrive(ga_u, i_m_sefg, message, usr)
-    else:
-        final_response = await upload_to_tg(i_m_sefg, fol_der, usr, {})
-        print(final_response)
-    try:
-        shutil.rmtree(fol_der)
-    except:
-        pass
+    
